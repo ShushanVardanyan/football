@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zabej</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="../css/style.css">
+<title>ZABEJ | Футбольный онлайн менеджер</title>
+	    <link rel="icon" type="image/png" href="../img/favicon.ico" />
+
+</head>
+<body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+     <ul class="nav navbar-nav navbar-right" style="margin-right: 150px ; margin-top: 10px">
+		<form class="form-inline" action="/action_page.php">
+          <a href="../registration.html" style="color: forestgreen">Регистрация</a>
+            <div class="form-group">
+                <input type="text" placeholder="Логин" id="login" class="login_box" style="background-color:dimgrey; color: white">
+               </div>
+               <div class="form-group">
+                <input type="password" placeholder="Пароль" id="password" class="password_login"  style="background-color: dimgray;color: white"></div>  
+               <button class="button" id="login_btn" style="background-color: forestgreen;color: white">ок
+               </button>
+         </form>
+      </ul>
+   </nav>
+      <div class="bgimage" >
+         <div class="container" style="background-color: gainsboro">
+              <nav class="navbar navbar-inverse" style="background-color: white;border-color: green">      
+	             <ul class="nav navbar-nav" style="width: 100%">
+	     		   <li class="main" >
+	    			  <a style="color: white;background-color: green ; text-align:center" href="../index.html">Главная</a>           
+                   </li>
+	               <li class="main" >
+	            	 <span class="arrow"></span>
+	      	         <a style="color: white;background-color: green"href="../about.html">О проекте</a>
+	      		    </li>
+		      	     <li class="main" >
+		               <span class="arrow"></span>
+				        <a style="color: white;background-color: green" href="../journal.html">Журнал</a>
+				     </li>
+	      		     <li  class="main">
+	            	   <span class="arrow"></span>
+	      			   <a style="color: white;background-color: green" href="../statistika/information.html">Статистика</a>
+	      		    </li>
+	      		    <li class="main">
+	            	   <span class="arrow"></span>
+	     			   <a  style="color: white;background-color: green" href="../fac.html">Правила</a>
+	     		    </li>
+	            </ul>
+		    </nav>
+   
+    <div class="primary">
+        <div class="second" >
+           <div class="col-md-8">
+             <div class="head_row">
+				<h2 >Клубы пользователя</h2>
+				<div class="padding">
+					<table class="table table-bordered" width="100%">
+						<tr class="heading">
+							<td width="200" class="tdcolor">Команда</td>
+							<td width="100" class="tdcolor">Лига</td>
+							<td width="40" class="tdcolor">Уровень</td>
+							<td width="120" class="tdcolor"></td>
+						</tr>
+						<tr>
+							<td><img src="../img/germany.svg" width="12">
+							    <a href="#">Вулверхэмптон Уондерерс	</a>
+				           </td>
+							<td>
+								<a href="#"><img src="../img/germany.svg" width="12">Чемпионшип</a>
+				            </td>
+				             <td class="tdcolor" align="center">1823</td>
+				             <td>    
+                                <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Показать статистику</button><span class="caret"></span><ul class="dropdown-menu">
+      							  <table width="100%" class="table table-bordered">
+      						<tr>
+			                    <td>
+				                  <table width="100%" class="items">
+					                <tr class="tdcolor">
+						              <td width="10"></td>
+						              <td width="50%">Команда</td>
+						              <td>И</td>
+						              <td>В</td>
+						              <td>Н</td>
+                                      <td>П</td>
+						              <td>О</td>
+						          </tr>
+							      <tr class="tdcolor" >
+							          <td>1</td>
+							          <td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px">Саутгемптон</a></td>
+							          <td class="tdcolor">2</td>
+							          <td class="tdcolor">2</td>
+							          <td class="tdcolor">1</td>
+							          <td class="tdcolor">1</td>
+							          <td class="tdcolor">6</td>
+						          </tr>
+						          <tr class="tdcolor" >
+							          <td class="tdcolor">2</td>
+							          <td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px">Уотфорд</a></td>
+							          <td class="tdcolor">2</td>
+							          <td class="tdcolor">2</td>
+							          <td class="tdcolor">0</td>
+							          <td class="tdcolor">0</td>
+							          <td class="tdcolor">6</td>
+						          </tr>
+							<tr class="tdcolor" >
+							<td class="tdcolor">3</td>
+							<td class="tdcolor" align="left"><a class="tdcolor" href="" style="font-size: 12px">ДербиКаунти</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">9</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">6</td>
+						</tr>
+						<tr class="tdcolor"  >
+							<td class="tdcolor">4</td>
+							<td  class="tdcolor"align="left"><a  class="tdcolor"href="" style="font-size: 12px">Миддлсбро</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">4</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">6</td>
+						</tr>
+						<tr class="tdcolor" >
+							<td class="tdcolor">5</td>
+							<td class="tdcolor"align="left"><a class="tdcolor" href="" style="font-size: 12px">КардиффСити</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor" >1</td>
+							<td class="tdcolor">7</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">4</td>
+						</tr>
+						</table>
+			</td>
+		</tr>
+	</table>
+
+    </ul>
+  </div>
+</td>				
+                          <tr>
+								<td>
+									<img src="../img/usa.png" width="12"> 
+									<a href="#">Сантос, Сан-Паулу</a>
+								</td>
+								
+								<td>
+									<a href="#">
+										<img src="../img/usa.png" width="12">Серия А
+									</a>
+								</td>
+								<td class="tdcolor" align="center">
+									1538
+								</td>
+								<td>    
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Показать статистику</button>
+                  <span class="caret"></span>
+                    <ul class="dropdown-menu">
+      		         <table width="100%" class="table table-bordered">
+				  <tr>
+			        <td>
+				 <table width="100%" class="items">
+					<tr class="tdcolor">
+						<td width="10"></td>
+						<td width="50%">Команда</td>
+						<td>И</td>
+						<td>В</td>
+						<td>Н</td>
+                        <td>П</td>
+						<td>О</td>
+					</tr>
+																	
+						<tr class="tdcolor" >
+							<td>1</td>
+							<td align="left" class="tdcolor">
+								<a class="tdcolor" href="#" style="font-size: 12px"> Флуминенсе</a>
+							</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">8</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">2</td>
+						</tr>
+						
+						<tr class="tdcolor" >
+							<td class="tdcolor">2</td>
+							<td align="left" class="tdcolor">
+								<a class="tdcolor" href="#" style="font-size: 12px"> Ботафого</a>
+							</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">1</td>
+						</tr>
+							<tr class="tdcolor" >
+							<td class="tdcolor">3</td>
+							<td class="tdcolor" align="left">
+								<a class="tdcolor" href="#" style="font-size: 12px">Сан-Паулу</a>
+							</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">5</td>
+						</tr>
+						<tr class="tdcolor" >
+							<td class="tdcolor">4</td>
+							<td  class="tdcolor"align="left">
+								<a  class="tdcolor"href="#" style="font-size: 12px"> Баия</a>
+							</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">4</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+						</tr>
+						<tr class="tdcolor"  >
+							<td class="tdcolor">5</td>
+							<td class="tdcolor"align="left">
+								<a class="tdcolor" href="#" style="font-size: 12px">КардиффСити</a>
+							</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor" >0</td>
+							<td class="tdcolor">3</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">5</td>
+						</tr>
+						</table>
+			</td>
+		</tr>
+	</table>
+
+    </ul>
+  </div>
+  </td>					
+	</tr>
+							<tr>
+								<td>
+									<img src="../img/uk.png" width="12"> 
+									<a href="#">Сантос, Сан-Паулу</a>
+								</td>
+								
+								<td>
+									<a href="#">
+										<img src="../img/uk.png" width="12">
+										Серия А
+									</a>
+								</td>
+								<td class="tdcolor" align="center">
+									1538
+								</td>
+								<td>    
+                                     <div class="dropdown">
+                   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Показать статистику</button>
+                     <span class="caret"></span>
+                       <ul class="dropdown-menu">
+      		            <table width="100%" class="table table-bordered">
+      		            <tr>
+      		             <td>
+				<table width="100%" class="items">
+					<tr class="tdcolor">
+						<td width="10"></td>
+						<td width="50%">Команда</td>
+						<td>И</td>
+						<td>В</td>
+						<td>Н</td>
+                        <td>П</td>
+						<td>О</td>
+					</tr>
+																	
+				<tr class="tdcolor" >
+							<td>1</td>
+							<td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px"> Флуминенсе</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">6</td>
+							<td class="tdcolor">4</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">2</td>
+						</tr>
+						
+						<tr class="tdcolor" >
+							<td class="tdcolor">2</td>
+							<td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px"> Ботафого</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">5</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">1</td>
+						</tr>
+							<tr class="tdcolor" >
+							<td class="tdcolor">3</td>
+							<td class="tdcolor" align="left"><a class="tdcolor" href="#" style="font-size: 12px">Сан-Паулу</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">6</td>
+						</tr>
+						<tr class="tdcolor" >
+							<td class="tdcolor">4</td>
+							<td  class="tdcolor"align="left"><a  class="tdcolor"href="#" style="font-size: 12px"> Баия</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">4</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">6</td>
+						</tr>
+						<tr class="tdcolor"  >
+							<td class="tdcolor">5</td>
+							<td class="tdcolor"align="left"><a class="tdcolor" href="#" style="font-size: 12px">КардиффСити</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor" >1</td>
+							<td class="tdcolor">3</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">5</td>
+						</tr>
+						</table>
+			</td>
+		</tr>
+	</table>
+</ul>
+  </div>
+      </td>					
+	</tr>
+                             <tr>
+								<td>
+									<img src="../img/arg.svg" width="12"> 
+									<a href="#">Вердер, Бремен	</a>
+								</td>
+								
+								<td>
+									<a href="#">
+										<img src="../img/arg.svg" width="12"> 2 Бундеслигa</a>
+								</td>
+								<td class="tdcolor" align="center">
+									1579
+								</td>
+								<td>    
+                                     <div class="dropdown">
+<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Показать статистику</button>
+ <span class="caret"></span>
+    <ul class="dropdown-menu">
+      							
+<table width="100%" class="table table-bordered">
+				<tr>
+			<td>
+				<table width="100%" class="items">
+					<tr class="tdcolor">
+						<td width="10"></td>
+						<td width="50%">Команда</td>
+						<td>И</td>
+						<td>В</td>
+						<td>Н</td>
+                        <td>П</td>
+						<td>О</td>
+					</tr>
+																	
+						<tr class="tdcolor" >
+							<td>1</td>
+							<td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px"> Ганза</a>
+							</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+						</tr>
+						<tr class="tdcolor" >
+							<td>2</td>
+							<td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px"> Кайзерслаутерн</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">5</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">3</td>
+						</tr>
+						
+						<tr class="tdcolor" >
+							<td class="tdcolor">3</td>
+							<td align="left" class="tdcolor"><a class="tdcolor" href="#" style="font-size: 12px"> Вердер</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">8</td>
+							<td class="tdcolor">6</td>
+						</tr>
+							<tr class="tdcolor" >
+							<td class="tdcolor">4</td>
+							<td class="tdcolor" align="left"><a class="tdcolor" href="" style="font-size: 12px"> Фрайбург</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">9</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">1</td>
+						</tr>
+						<tr class="tdcolor"  >
+							<td class="tdcolor">5</td>
+							<td  class="tdcolor"align="left"><a  class="tdcolor"href="" style="font-size: 12px">Лилль, Лилль</a></td>
+							<td class="tdcolor">0</td>
+							<td class="tdcolor">8</td>
+							<td class="tdcolor">4</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+						</tr>
+						<tr class="tdcolor"  >
+							<td class="tdcolor">6</td>
+							<td class="tdcolor"align="left"><a class="tdcolor" href="" style="font-size: 12px">Ахмат, Грозный</a></td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">1</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">2</td>
+							<td class="tdcolor">8</td>
+						</tr>
+						</table>	
+						
+			</td>
+		</tr>
+	</table>
+
+    </ul>
+  </div>
+</td>					
+	</table>		
+        </div>
+			</div>
+          <div class="head_row">
+				<h2 >История клубов</h2>
+				<div class="padding">
+					<table class="table table-bordered" width="100%">
+						<tr class="tdcolor">
+							<td class="tdcolor">Команда</td>
+							<td class="tdcolor">Лига</td>
+							<td class="tdcolor"width="40">Уровень</td>
+							<td class="tdcolor"width="120">Начало</td>
+							<td class="tdcolor"width="120">Окончание</td>
+						</tr>
+								<tr  class="tdcolor">
+								<td class="tdcolor">
+									<img src="../img/russ.png" width="12">
+									 <a  class="tdcolor"href="#">Орландо Сити, Орландо</a>
+								</td>
+								
+								<td class="tdcolor">
+										<a class="tdcolor" href="#">
+										<img src="../img/russ.png" width="12">МЛС</a>
+									</td>
+								<td class="tdcolor" align="center">
+									1414
+								</td>
+								<td  class="tdcolor" align="center">
+									2017-01-15
+								</td>
+								<td class="tdcolor" align="center">
+										-</td>
+							</tr>
+								<tr  class="tdcolor" class="tdcolor">
+								<td>
+									<img src="../img/arg.svg" width="12"> 
+									<a  class="tdcolor" href="#">Кристал Пэлас, Лондон	</a>
+								</td>
+								
+								<td class="tdcolor">
+									<a class="tdcolor" href="#">
+										<img src="../img/arg.svg" width="12">
+										Премьер Лига
+									</a>
+												</td>
+								<td class="tdcolor" align="center">
+									1819
+								</td>
+								
+								<td  class="tdcolor" align="center">
+									2017-01-19
+								</td>
+								<td class="tdcolor" align="center">
+										-</td>
+							</tr>
+							<tr class="tdcolor">
+								<td class="tdcolor">
+									<img src="../img/uk.svg" width="12">
+									 <a  class="tdcolor" href="#">Лилль, Лилль</a>
+								</td>
+								
+								<td>
+									<a  class="tdcolor" href="#">
+										<img src="../img/uk.png" width="12">
+										Лига 1
+									</a>
+								</td>
+								<td  class="tdcolor"align="center">
+									1791
+								</td>
+								<td  class="tdcolor" align="center">
+									2017-06-29
+								</td>
+								<td  class="tdcolor" align="center">
+								-
+								</td>
+							</tr>
+													<tr>
+								<td class="tdcolor">
+									<img src="../img/italy.png" width="12">
+									 <a class="tdcolor" href="#">Атлетико Минейро, Белу-Оризонти	</a>
+								</td>
+								
+								<td>
+								<a  class="tdcolor" href="#">
+									<img src="../img/france.png" width="12">
+										Серия А
+									</a>
+								</td>
+								<td  class="tdcolor"align="center">
+									1744
+								</td>
+								<td class="tdcolor" align="center">
+									2017-10-01
+								</td>
+								<td class="tdcolor" align="center">
+								-
+								</td>
+							</tr>
+							<tr class="tdcolor">
+								<td class="tdcolor">
+									<img src="../img/uk.png" width="12"> 
+									<a class="tdcolor"  href="#">Торпедо, Москва	</a>
+								</td>
+								
+								<td>
+								<a  class="tdcolor"href="#">
+								<img  class="tdcolor"src="../img/russ.png" width="12">
+										ФНЛ
+									</a>
+								</td>
+								<td class="tdcolor" align="center">
+									1314
+								</td>
+								<td class="tdcolor"align="center">
+									2017-10-01
+								</td>
+								<td class="tdcolor" align="center">
+									-
+								</td>
+							</tr>
+								<tr>
+								
+								</table>
+				</div>
+			</div>
+         </div>
+         </div>
+		</div>
+   
+    <div class="col-md-4">
+		<div class="head_row">
+			<h2 >Меню</h2>
+			<div >
+				<table  width="100%"  class="table table-bordered">
+					<tr>
+						<td><a href="id1.html" class="managlink" >Общая информация</a></td>
+					</tr>
+					<tr>
+						<td><a href="friends.html" class="managlink" >Друзья</a></td>
+					</tr>
+					<tr>
+						<td><a href="clubs.html" class="managlink" >Клубы</a></td>
+					</tr>
+					<tr>
+						<td><a href="priority.html" class="managlink" >Достижения</a></td>
+					</tr>
+					<tr>
+						<td><a href="msg.html" class="managlink" >Связаться</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+     </div>
+     </div>
+    </body>
+</html>

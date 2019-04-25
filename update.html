@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zabej</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/style.css">
+    	<title>ZABEJ | Футбольный онлайн менеджер</title>
+	    <link rel="icon" type="image/png" href="img/favicon.ico" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav navbar-nav navbar-right" style="margin-right: 150px ; margin-top: 10px">
+		<form class="form-inline" action="/action_page.php">
+            <a href="registration.html" style="color: forestgreen">Регистрация</a>
+              <div class="form-group">
+                <input type="text" placeholder="Логин" id="login" class="login_box" style="background-color:dimgrey; color: white">
+                </div>
+  <div class="form-group">
+              <input type="password" placeholder="Пароль" id="password" class="password_login"  style="background-color: dimgray;color: white">
+ </div>  
+              <button class="button" id="login_btn" style="background-color: forestgreen;color: white">ок</button>
+</form>
+    </ul>
+</nav>
+<div class="bgimage" >
+<div class="container" style="background-color: gainsboro">
+  <nav class="navbar navbar-inverse" style="background-color: white;border-color: green">      
+	        <ul class="nav navbar-nav" style="width: 100%">
+	     		<li class="main" style="width: 20%;font-size: 24px; ">
+	    			<a style="color: white;background-color: green ; text-align:center" href="index.html">Главная</a>           
+	           	</li>
+	            <li class="main" style="width: 20%;font-size: 24px;">
+	            	<span class="arrow"></span>
+	      			<a style="color: white;background-color: green"href="about.html">О проекте</a>
+	      		</li>
+		      	<li class="main" style="width: 20%;font-size: 24px; ">
+		            <span class="arrow"></span>
+				    <a style="color: white;background-color: green" href="journal.html">Журнал</a>
+				</li>
+	      		<li  class="main" style="width: 20%;font-size: 24px; ">
+	            	<span class="arrow"></span>
+	      			<a style="color: white;background-color: green" href="statistika/information.html">Статистика</a>
+	      		</li>
+	      		<li class="main" style="width: 20%;font-size: 24px; ">
+	            	<span class="arrow"></span>
+	     			<a  style="color: white;background-color: green" href="fac.html">Правила</a>
+	     		</li>
+	        </ul>
+		</nav>
+      <br>
+   <div class="primary">
+	<div class="second">
+	<div class="col-md-8">
+	
+	<div class="head_row " >
+			<h2 >UpdatePack 1 - 31.12.2018 (0)
+
+</h2>
+            <table width="100%" >
+				<tr>
+					<td>
+				<span  style="color: black">
+
+<p>Здравствуйте уважаемые менеджеры!
+<br>
+<br>
+<br>
+
+
+Хотим с Вами поделится о внесенных изменениях на проекте.
+
+<br>
+<br>
+
+Визуальная часть сайта:
+
+<br>
+<br>
+
+
+Убрали на страничке «игрока» справа в меню «побеседовать» с игроком;<br>
+
+На страничке «стартовый состав» убрали внизу функцию «попросить тренера» выставить состав – по причине работает некорректно;
+<br>
+На страничке «календарь» справа в меню убрали: «мероприятия клуба» и «тренировочный лагерь»;
+<br>
+ На страничке «настройки команды» справа в меню убрали раздел «добавление футболистов» так, как данный раздел некорректен на этой странице;
+<br>
+На странице «контракты» убрать справа в опциях раздел «оканчивающиеся контракты», «юниоры». В настоящий момент разделы не нужны;
+<br>
+Главное меню в разделе «команда» убрали страничку «Скаут-информация» так, как страница не работает;
+<br>
+На страничке «список игроков» справа внизу под «Историей менеджеров» убрали «Новости НФФ» так, как ими никто не пользуется;
+<br>
+Главное меню в разделе «Команда» убрали подраздел «VIP-зона» так, как данный подраздел есть в разделе «Кабинет»;
+<br>
+Раздел «Кабинет» на страничке «редактировать данные» убрали «социальные сети» и привязку аккаунта с «Вконтакте»;
+<br>
+Раздел «Кабинет» в нем убрали подраздел «связь с «главредом»;
+<br>
+Раздел «статистика» справа в меню убрали пункт «предстоящие события»;
+<br>
+На «Главной странице» справа гиперссылки «Статистика», «Лучшие менеджеры», «Статистика-Рейтинг менеджеров».  исправили. 
+<br>
+
+<br><br>
+Игровой процесс:
+<br><br><br>
+
+
+1) Уменьшено время строительства инфраструктуры(менеджеры которые заказали раньше постройку будут достраивать по старому сроку).
+<br>
+2) Убрали продление контрактов и у некоторых менеджеров в их командах зарплаты игроков, которые достигали 1 миллиарда так, как эти действия влияют на суммы от спонсоров и реклам.
+<br>
+3)  Повысили суммы выплат от спонсоров и реклам (в процессе будем корректировать - обновятся через 2 дня).
+<br>
+4) Уменьшили трансферные суммы на игроков в несколько раз.
+<br><br><br><br>
+
+
+Трансферное окно будет открыто с 1 января и продлиться до 10 февраля.
+
+<br><br>
+
+Над чем будем еще работать:
+<br>
+Мы помним за тренировки, которые уже будут исправлены в ближ. время.
+<br>
+Будут введены красные карточки и травмы со след. сезона.
+<br>
+Еще будем разбираться с самим процессом игры во время матча. 
+<br>
+Будут пересмотрены обязанности и возможности существующих админок. 
+<br><br><br>
+
+
+
+
+В середине января будет закрыт сезон и с февраля начнем новый. По итогам след. еврокубков: в планах создание Мировой Лиги для сильнейших клубов Zabej.<br><br>
+
+
+
+Нужны активные менеджеры, которые готовы помочь проводить еврокубки со след. сезона. Пишите: Norik.
+
+<br><br><br><br><br><br>
+
+ 
+
+
+
+Напоминаем: по правилам проекта отныне менеджер без ВИПА может иметь 1 клуб, а с ВИПОМ - 4 клуба. Больше клубов - дополнительные слоты. Потому просим Вас определиться с клубами в Вашем распоряжении. В ближ. неделю администрация займётся этим вопросом.
+<br>
+Также напоминаем менеджеру запрещено иметь клубы из одного чемпионата!
+
+<br><br>
+
+Благодарим Вас за внимание. Всех С Наступающими праздниками!!!!  
+<br><br>
+
+
+ </p>
+       </span>
+
+				</td>
+				</tr>
+		</table>
+
+		
+        </div>
+   <div class="head_row " >
+			<h2 >Комментарии (30)</h2>
+			 
+			<table width="100%" class="table table-bordered" >
+			<tr>
+	<td  align="center">
+		<div><img src="img/jc.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user3/id1.html" class="managlink"><b> J.C.</b></a>
+		</div>
+		<div>
+		<p  class="managlink">мдааа...видимо решения моей проблемы не дождаться......</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 20:55:12</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<td  align="center">
+		<div><img src="img/img3.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user1/id1.html" class="managlink"><b> DmitryIZH</b></a>
+		</div>
+		<div>
+		<p  class="managlink">6 база у кого-то построена?</p>	
+		</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 19:20:18</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>			
+	<tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user2/id1.html" class="managlink"><b>madan</b></a>
+		</div>
+		<div>
+		<p  class="managlink">Ребят! Дублирую свою проблему!!!
+
+"Ребят, у кого такая же проблема?
+Уже пару недель наверное при заходе на игру, вот такая картина - https://prnt.sc/m4ihvt
+Страница грузится и грузится. Ничего не могу сделать в матче...
+
+Куки, кэши чистил, на мобильном такая же картина. В других браузерах и на мобиле, и на декстопе аналогично все....
+В инкогнито все норм, до тех пор пока не залогинюсь.
+</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 15:57:25</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>	
+	<tr>
+	<td  align="center">
+		<div><img src="img/roman.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user4/id1.html" class="managlink"><b>Roman</b>
+			</a>
+		</div>
+		<div>
+		<p  class="managlink">а кто проверяющие? можно список ответственных людей?</p>	
+		</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 15:57:25</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>		
+	<tr>
+	<td  align="center">
+		<div><img src="img/jc.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user3/id1.html" class="managlink"><b>J.C.</b></a>
+		</div>
+		<div>
+		<p  class="managlink">Админы, сделайте какую то тему для трансферов. Там где можно будет договориться об аренде покупке обмене игрока</p></div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:23:17</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>		
+	<tr>
+	<td  align="center">
+		<div><img src="img/img3.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user1/id1.html" class="managlink"><b>DmitryIZH</b></a>
+		</div>
+		<div>
+		<p  class="managlink">Я так и не понял, рестарт будет или как?</p>	
+		</div>
+	</td>
+     <td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>		
+	<tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user2/id1.html" class="managlink"><b>madan</b></a>
+		</div>
+		<div>
+		<p  class="managlink">	Верните зеленую штучку когда у команлы идет матч, а по пьяни заходишь и не знаешь играют твои клубы или нет</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+     <tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user2/id1.html" class="managlink"><b>madan</b>
+			</a>
+		</div>
+		<div>
+		<p  class="managlink">	Верните зеленую штучку когда у команлы идет матч, а по пьяни заходишь и не знаешь играют твои клубы или нет</p>	
+</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user2/id1.html" class="managlink"><b>madan</b></a>
+		</div>
+		<div>
+		<p  class="managlink">Сделайте зависимость зарплаты от стоимости игрока.Все мажорные клубы пусть платят достойные зарплаты игрокам, чтобы их расходы хоть как-то увеличились,и они тоже думали о расходах.Думаю,это будет справедливо) Так хоть игроков лишних на ТО начнут выставлять и другие клубы смогут приобрести по 1-2 хорошим игрокам. Сейчас платят по 1000$ за игрока со скиллом 200.Как станет миллионов по 5-6 в год (условная цифра), так поинтересней станет.Но опять же, надо полностью фин систему продумать. А то в некоторых клубах по несколько составов сидит,а для чего они там?</p>	
+		</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 15:57:25</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>		
+	<tr>
+	<td  align="center">
+		<div><img src="img/roman.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user4/id1.html" class="managlink"><b>Roman</b></a>
+		</div>
+		<div>
+		<p  class="managlink">а как так ? я в Испании Ла Лиге был на 2 месте, выиграл матч последний, и вдруг меня Валенсия догнала по очкам! хотя мы были равны по очкам!!</p>	
+</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-26 15:57:25</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<td  align="center">
+		<div><img src="img/jc.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user3/id1.html" class="managlink"><b>J.C.</b></a>
+		</div>
+		<div>
+		<p  class="managlink">Ребят, у кого такая же проблема?
+Уже пару недель наверное при заходе на игру, вот такая картина - https://prnt.sc/m4ihvt
+Страница грузится и грузится. Ничего не могу сделать в матче...
+
+Куки, кэши чистил, на мобильном такая же картина. В других браузерах и на мобиле, и на декстопе аналогично все....</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:23:17</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>	
+	<tr>
+	<td  align="center">
+		<div><img src="img/img3.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user1/id1.html" class="managlink"><b>DmitryIZH</b>
+			</a>
+		</div>
+		<div>
+		<p  class="managlink">когда будет закончен сезон? какого числа?вы говорили в январе</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>		
+	<tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+			<a href="user2/id1.html" class="managlink"><b>madan</b></a>
+		</div>
+		<div>
+		<p  class="managlink">	И как можно купить ячейку для команды если она стоит 15 забей. На деньги Украины это 420 гривень. Вы вообще где живёте?</p>	
+		</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+     <tr>
+	<td  align="center">
+		<div><img src="img/madan.png" width="30"></div>
+	</td>
+	<td colspan="2">
+		<div>
+			<a href="index.html" class="small">VIP</a>
+            <a href="user2/id1.html" class="managlink"><b>madan</b></a>
+		</div>
+		<div>
+		<p  class="managlink">	Объясните, как проходят трансферы? Один игрок стоит на ТО уже 5-ый день, второго только вчера выставил и сегодня продался.</p>	</div>
+	</td>
+	<td align="center">
+		<div >
+			<div class="managlink">2019-01-23 22:14:40</div>
+			<div><a class="managlink">[ответить]</a></div>
+		</div>
+	</td>
+	</tr>
+		</table>
+		</div>
+		<p class="managlink">Для того, чтобы оставить комментарий, необходимо войти в свой аккаунт.</p>
+	     </div>
+		</div>
+      <div class="col-md-4">
+		<div class="head_row" style="border-radius:10px" >
+			<h2 >Популярные новости</h2> 
+			<table class="table table-bordered" width="100%"  style="border-bottom: 2px solid  green">
+				<tr>
+					<td>
+					<u>	<a class="managlink" href="season.html">Жеребьевка первых раундов Еврокубков 15 сезона (9)
+                		</a></u>
+					</td>
+				</tr>
+				<tr>
+				<td>
+				<u><a  class="managlink"href="format.html">Формат проведения Еврокубков 15 сезона (4) </a></u>
+				</td>
+				</tr>
+				<tr>
+				<td>
+                  <u><a class="managlink" href="raiting.html">Рейтинг стран Европы 15 сезона (7)  </a></u>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				    <u>	<a class="managlink" href="headliga.html">Президент лиги (9)	</a></u>
+                </td>
+				</tr>
+				<tr>
+				<td>
+				<u>	<a class="managlink" href="news.html">Новости по чемпионатам (5)</a></u>
+				</td>
+				</tr>
+				<tr>
+				<td>
+							<u><a class="managlink" href="newseason.html">Запуск нового сезона (60)</a></u>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<u><a  class="managlink" href="newspaper.html">Газета "Zabej" (15)</a></u>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<u><a class="managlink" href="transfer.html">Трансферные объявления (28)</a></u>
+						</td>
+					</tr>
+						<tr>
+						<td>
+							<u><a class="managlink" href="update.html">UpdatePack 1 - 31.12.2018 (109)	</a></u>
+						</td>
+					</tr>
+						<tr>
+						<td>
+							<u><a class="managlink" href="newyear.html">C Наступающим Новым Годом! (4)</a></u>
+						</td>
+					</tr>	
+					<tr>
+						<td>
+							<u><a class="managlink" href="allnews.html">Все новости	</a></u>
+						</td>
+					</tr>
+				</table>
+		</div>
+	    </div>
+       </div>
+       </div>
+       </div>
+    </body>
+    </html>
